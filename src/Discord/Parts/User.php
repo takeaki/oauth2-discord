@@ -29,6 +29,9 @@ class User extends Part implements ResourceOwnerInterface
         'avatar',
         'verified',
         'mfa_enabled',
+        'locale',
+        'flags',
+        'premium_type',
     ];
 
     /**
