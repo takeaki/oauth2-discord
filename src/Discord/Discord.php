@@ -160,6 +160,19 @@ class Discord extends AbstractProvider
     }
 
     /**
+     * Gets the add member endpoint.
+     *
+     * @param string $guildId Guild ID.
+     * @param string $memberId Member ID.
+     *
+     * @return string Endpoint.
+     */
+    public function getAddMemberEndpoint($guildId, $memberId)
+    {
+        return self::BASE_API_URL.'/guilds/'.$guildId.'/members/'.$memberId;
+    }
+
+    /**
      * Builds a part.
      *
      * @param string      $part       The part to build.
